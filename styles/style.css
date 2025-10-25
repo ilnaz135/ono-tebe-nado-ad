@@ -88,6 +88,7 @@
 .aligned-text_center {
   line-height: 1;
   text-align: center;
+  margin: 8px 0 13px 29px
 }
 
 .aligned-text_right {
@@ -109,10 +110,10 @@
   position: relative;
   z-index: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
-  gap: 78px;
-  padding: 136px 0 0;
+  gap: 108px;
+  padding: 116px 0 0;
 }
 
 .cover__description-text {
