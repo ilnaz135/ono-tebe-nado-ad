@@ -67,7 +67,7 @@
   background-color: #000000;
 }
 
-.main__title--text {
+.cover__title {
   position: relative;
   z-index: 1;
   display: flex;
@@ -79,7 +79,6 @@
   line-height: 1.15;
   letter-spacing: 30px;
   text-transform: uppercase;
-  padding: 165px 50px 0 50px;
 }
 
 .aligned-text {
@@ -100,11 +99,13 @@
   letter-spacing: 60px;
 }
 
+/* Убирает ненужный отступ в конце слова, создаваемый свойством letter-spacing всего элемента */
+
 .remove-spacing {
   letter-spacing: normal;
 }
 
-.main__auction {
+.cover__description {
   position: relative;
   z-index: 1;
   display: flex;
@@ -112,10 +113,9 @@
   align-items: center;
   gap: 78px;
   padding: 136px 0 0;
-  margin-top: 354px;
 }
 
-.main__legend--auction {
+.cover__description-text {
   color: #FFF;
   font-size: 22px;
   line-height: 1.27;
@@ -123,7 +123,7 @@
   word-spacing: 18px;
 }
 
-.main__bet--btn {
+.bet-button {
   border: 1px #FFF solid;
   padding: 14px 32px;
   color: #FFF;
@@ -136,7 +136,7 @@
   cursor: pointer;
 }
 
-.main__bet--btn:hover {
+.bet-button:hover {
   color: #000000;
   background-color: #FFF;
 }
