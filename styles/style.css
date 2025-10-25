@@ -96,7 +96,7 @@
 }
 
 .letter-spacing-extended {
-  letter-spacing: 60px;
+  letter-spacing: 30px;
 }
 
 /* Убирает ненужный отступ в конце слова, создаваемый свойством letter-spacing всего элемента */
