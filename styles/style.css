@@ -1,52 +1,79 @@
-/* HEADER */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+}
+
+.content-section {
+  width: 100%;
+  margin: 0 auto;
+}
 
 .header {
-  width: 1100px;
-  height: 293px;
-  display: flex;
-}
-
-.nav__about--us {
-  display: flex;
-  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1.51fr 2fr 1.5fr;
   align-items: center;
-  justify-content: space-between;
+  padding: 92px 50px 90px;
 }
 
-.nav__links {
+.header__links-list {
   display: flex;
   gap: 32px;
-  margin: 0 50px 0 50px;
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
+}
+
+.header__links-list-item {
   list-style: circle;
 }
 
-.nav__link--main-list1 {
-  display: block;
+.header__links-list-item_no-bullit {
+  list-style: none;
 }
 
-.nav__link--lotes,
-.nav__link--auction {
-  text-decoration: underline;
-}
-
-.nav__img--link {
-  display: block;
-  width: 130px;
-  height: 105px;
-  margin-right: 195px;
-}
-
-.about__us--contacts {
-  display: flex;
-  flex-direction: column;
-  font-family: Raleway, sans-serif;
+.header__link {
   font-size: 18px;
-  flex-grow: 1;
+  white-space: nowrap;
 }
 
-/* SECTION--1 */
+.text-link:hover {
+  background-color: #000000;
+  color: #FFF;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  justify-self: center;
+  align-self: center;
+  width: 140px;
+}
+
+.header__logo-image {
+  width: 100%;
+}
+
+.address {
+  font-style: inherit;
+}
+
+.header__address {
+  justify-self: end;
+  font-style: inherit;
+}
+
+.address__item {
+  display: block;
+  font-size: 18px;
+  line-height: 1.35;
+  text-underline-position: under;
+}
+
+.address__address-text {
+  font-size: 18px;
+  line-height: 1.35;
+}
 
 .cover {
   position: relative;
@@ -88,7 +115,6 @@
 .aligned-text_center {
   line-height: 1;
   text-align: center;
-  margin: 8px 0 13px 29px
 }
 
 .aligned-text_right {
@@ -97,10 +123,8 @@
 }
 
 .letter-spacing-extended {
-  letter-spacing: 30px;
+  letter-spacing: 60px;
 }
-
-/* Убирает ненужный отступ в конце слова, создаваемый свойством letter-spacing всего элемента */
 
 .remove-spacing {
   letter-spacing: normal;
@@ -110,10 +134,10 @@
   position: relative;
   z-index: 1;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
-  gap: 108px;
-  padding: 116px 0 0;
+  gap: 78px;
+  padding: 135px 0 0;
 }
 
 .cover__description-text {
@@ -126,7 +150,7 @@
 
 .bet-button {
   border: 1px #FFF solid;
-  padding: 14px 32px;
+  padding: 12px 32px;
   color: #FFF;
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
@@ -142,32 +166,30 @@
   background-color: #FFF;
 }
 
-/* SECTION--2 */
-
-.main__about--lotes {
-  padding: 180px 25px 155px 25px;
+.lots {
+  padding: 0 50px;
 }
 
-.main__about--title {
-  padding: 0 0 30px 40px;
+.lots__heading {
+  padding: 0 0 27px 40px;
   font-weight: bold;
   font-size: 40px;
   line-height: 1;
   text-transform: uppercase;
 }
 
-.main__about--cards {
+.lots__card-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 25px;
   list-style: none;
 }
 
-.main__about--list-card-item {
+.lots__card-list-item {
   height: 100%;
 }
 
-.main__about--card-link {
+.card-link {
   display: block;
   height: 100%;
 }
@@ -201,7 +223,7 @@
   background-size: cover;
 }
 
-.main__about--card-title {
+.card__title {
   position: relative;
   z-index: 1;
   color: #FFF;
@@ -212,7 +234,7 @@
   text-transform: uppercase;
 }
 
-.main__about--card-text {
+.card__text {
   position: relative;
   z-index: 1;
   color: #FFF;
@@ -220,7 +242,7 @@
   line-height: 1.2;
 }
 
-.main__about--link-lookmore {
+.lots__look-more-link {
   display: block;
   margin: 30px 0 0 40px;
   font-size: 20px;
@@ -228,8 +250,6 @@
   text-underline-position: under;
   width: fit-content;
 }
-
-/* SECTION--3 */
 
 .about {
   display: grid;
@@ -261,7 +281,7 @@
 }
 
 .about__title {
-  padding: 100px 0 104px;
+  padding: 102px 0 100px;
   font-weight: bold;
   font-size: 40px;
   line-height: 1;
@@ -279,12 +299,14 @@
   line-height: normal;
 }
 
-/* FOOTER */
-
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 180px 50px 80px;
+  padding: 182px 50px 90px;
+}
+
+.footer__address {
+  font-style: inherit;
 }
 
 .footer__social-icon {
